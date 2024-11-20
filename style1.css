@@ -1,0 +1,14 @@
+html {
+    background-color: green;
+    border:5px solid Black;
+}
+h1,h2{
+    color: honeydew;
+    font-size: 48;
+    text-transform: uppercase;
+    font-family: "Franklin Gothic Medium";
+}
+p, ol, table, a, div{
+    color:honeydew;
+    font-family: "Times New Roman"
+}
