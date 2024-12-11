@@ -1,57 +1,120 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Charlie's webpage!</title>
-        <link rel="stylesheet" type="text/css" href="style1.css">
-    </head>
-    <body>
-        <h1>Charlie's webpage</h1>
-        <div class="image-container">
-            <img src ="Mewithwings.jpeg" width="400">
-        </div>
-        
-        <p>Charlie Lipscomb is an exceptionally talented young musician with a diverse range of skills. Having spent five years as a chorister at St John's College, Cambridge, he has honed his musical abilities to an advanced level. Charlie is currently a day pupil at Haileybury, where he is a member of Kipling House. His musical accomplishments include being diploma level in piano, Grade 7 in organ, and Grade 6 in horn, reflecting his dedication and versatility across multiple instruments. In addition to his instrumental skills, Charlie is a professional singer and was involved in the backing track for the Disney production of Shardlake. Outside of his musical achievements, Charlie is supported by his close-knit family: his sister Lydia, and his parents Charlotte and Chris, who have undoubtedly encouraged his passion for music. </p>
-        <h2>My Links</h2>
-        <a href="https://www.haileybury.com/about-haileybury/pastoral-care-wellbeing/boarding-day/kipling-boys/" target="_blank">My Boarding House</a>
-        <a href="https://en.wikipedia.org/wiki/Choir_of_St_John%27s_College,_Cambridge" target="_blank">about Sjcc</a>
-        <h2>My favourite food</h2>
-        <div class="list-container">
-            <ol>
-                 <li>Canaloni</li>
-                 <li>Macaroni</li>
-                 <li>Lobster and chips</li>
-                 <li>Pizza</li>
-                 <li>Panini</li>
-            </ol>
-        </div>
-        <table class="image-container">
-            
-            <h2>Fun Facts</h2>
-            <div>
-                <div>1. He has done his grade 8 piano</div>
-                <div>2. Charlie Lipscomb is a professional singer</div>
-                <div>3. Charlie's favorite place to go is Kenya</div>
-            </div>
-            <h2>Key information</h2>
-            <tr>
-                <td>Name:</td>
-                <td>Charlie Lipscomb</td>
-            </tr>
-            <tr>
-                <td>Age:</td>
-                <td>13</td>
-            </tr>
-            <tr>
-                <td>House:</td>
-                <td>Kipling</td>
-            </tr>    
-            <tr>
-                <td>Hobby:</td>
-                <td>Playing piano</td>
-            </tr>
-            <tr>
-                <td>Favourite Subject:</td>
-                <td>Computer Science</td>
-            </tr>
-    </body>
-</html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courchevel Travel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .intro h2, .content h2 {
+            color: #333;
+        }
+
+        .content p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Courchevel</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ski">Skiing</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#dining">Dining</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="intro">
+    <h2>Your Ultimate Winter Destination</h2>
+    <p>Discover the luxury and excitement of Courchevel, nestled in the French Alps. From world-class skiing to gourmet dining, Courchevel offers a variety of activities for everyone.</p>
+</section>
+
+<section id="ski" class="content">
+    <h2>World-Class Ski Slopes</h2>
+    <p>Courchevel boasts over 150 kilometers of ski slopes, suitable for all levels of skiers and snowboarders. Whether you are a beginner or an expert, you'll find the perfect slope to match your skill level.</p>
+</section>
+
+<section id="activities" class="content">
+    <h2>Winter Fun Beyond Skiing</h2>
+    <p>In Courchevel, there’s more than just skiing! You can enjoy snowshoeing, ice driving, dog sledding, and even paragliding over the stunning mountain views. Don’t miss out on the opportunity to explore the region in unique ways!</p>
+</section>
+
+<section id="dining" class="content">
+    <h2>Gourmet Dining Experiences</h2>
+    <p>Courchevel is known for its exceptional dining options. From Michelin-starred restaurants to charming alpine bistros, you'll find a range of flavors to satisfy your cravings after a day of adventure.</p>
+</section>
+
+<section id="contact" class="content">
+    <h2>Get in Touch</h2>
+    <p>If you have any questions or need more information about planning your trip to Courchevel, feel free to reach out to us. We are here to help!</p>
+    <form action="submit_form.php" method="post">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Courchevel Travel. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
